@@ -39,4 +39,15 @@ public class inbox {
 	public void Remove(task tsk) { 
 		this.Tasks.remove(tsk); 
 	}
+	public void Show() 
+	{ 
+		if(this.Tasks.isEmpty()) { 
+			System.out.println("None"); 
+		} else { 
+			for(int i=0; i< this.Tasks.size(); i++) 
+			{ 
+				System.out.println(i+ ": " + Tasks.get(i).getId()+" - "+Tasks.get(i).getStatus()+" - "+Tasks.get(i).getDD()); 
+			} 
+		} 
+	} 
 }
